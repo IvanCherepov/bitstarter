@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var buffer = new Buffer(16);
+var buffer = new Buffer(8);
 
 buffer.write(fs.readFileSync('./index.thml','utf8'));
 
