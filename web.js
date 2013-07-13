@@ -4,10 +4,10 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 
-var data = fs.readFileSync('index.thml','utf-8');
+var data = fs.readFileSync("index.thml","utf-8");
 
 app.get('/', function(request, response) {
-  response.send(data); {
+  response.send(data); 
 });
 
 var port = process.env.PORT || 5000;
